@@ -19,13 +19,14 @@
     <title>FSTM GmbH - Frank Schaefers Tischlermeister</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
           rel="stylesheet" type="text/css">
 
@@ -559,10 +560,12 @@
 </footer>
 
 <!-- jQuery -->
-<script src="js/jquery.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"
+        integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
+
 
 <!-- Bootstrap Core JavaScript -->
-<script src="js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script>
@@ -602,7 +605,7 @@
     var map;
     function initMap() {
         myLatLon = {lat: 51.477779, lng: 6.623451};
-        
+
         map = new google.maps.Map(document.getElementById('map'), {
             center: myLatLon,
             zoom: 12,
@@ -610,14 +613,14 @@
             mapTypeId: google.maps.MapTypeId.ROADMAP
         });
 
-        contentString = '<div class="mapmarker">'+
-                '<h2>FSTM GmbH</h2><p>Trakehnenstr. 8b</p><p>47445 Moers</p>' + 
-                        '</div>';
-        
+        contentString = '<div class="mapmarker">' +
+                '<h2>FSTM GmbH</h2><p>Trakehnenstr. 8b</p><p>47445 Moers</p>' +
+                '</div>';
+
         var infowindow = new google.maps.InfoWindow({
             content: contentString
         });
-        
+
         var marker = new google.maps.Marker({
             position: myLatLon,
             place: {
@@ -627,10 +630,10 @@
             map: map,
             title: 'FSTM GmbH Moers'
         });
-        marker.addListener('click', function() {
+        marker.addListener('click', function () {
             infowindow.open(map, marker);
         });
-        
+
         infowindow.open(map, marker);
     }
 
