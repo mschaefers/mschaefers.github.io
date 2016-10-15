@@ -40,6 +40,7 @@
 </head>
 
 <body>
+<!-- TODO favicon FS -->
 
 <!-- Navigation -->
 <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
@@ -47,28 +48,28 @@
     <ul class="sidebar-nav">
         <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
         <li class="sidebar-brand">
-            <a href="#top" onclick=$("#menu-close").click();>FSTM GmbH</a>
+            <a href="#Home" onclick=$("#menu-close").click();>FSTM GmbH</a>
         </li>
         <li>
-            <a href="#top" onclick=$("#menu-close").click();>Home</a>
+            <a href="#Home" onclick=$("#menu-close").click();>Home</a>
         </li>
         <li>
-            <a href="#about" onclick=$("#menu-close").click();>Willkommen</a>
+            <a href="#Willkommen" onclick=$("#menu-close").click();>Willkommen</a>
         </li>
         <li>
-            <a href="#services" onclick=$("#menu-close").click();>Services</a>
+            <a href="#Services" onclick=$("#menu-close").click();>Unsere Services</a>
         </li>
+        <!--<li>-->
+        <!--<a href="#portfolio" onclick=$("#menu-close").click();>Impressionen</a>-->
+        <!--</li>-->
         <li>
-            <a href="#portfolio" onclick=$("#menu-close").click();>Impressionen</a>
+            <a href="#Kontakt" onclick=$("#menu-close").click();>Kontakt</a>
         </li>
+        <!--<li>-->
+        <!--<a href="#partner" onclick=$("#menu-close").click();>Partner</a>-->
+        <!--</li>-->
         <li>
-            <a href="#contact" onclick=$("#menu-close").click();>Kontakt</a>
-        </li>
-        <li>
-            <a href="#partner" onclick=$("#menu-close").click();>Partner</a>
-        </li>
-        <li>
-            <a href="#impressum" onclick=$("#menu-close").click();>Impressum</a>
+            <a href="#Impressum" onclick=$("#menu-close").click();>Impressum</a>
         </li>
         <li><a href="mailto:frankschaefers@fstm.de" onclick=$("#menu-close").click();><span class="fa">&#xf003;</span>&nbsp;frankschaefers@fstm.de</a>
         </li>
@@ -76,43 +77,48 @@
 </nav>
 
 <!-- Header -->
-<header id="top" class="header">
+<header id="Home" title="Home" class="header">
     <div class="text-vertical-center">
+        <div align="center"><img src="img/logo/fstm.png" class="img-responsive" alt="FSTM GmbH"/></div>
         <h1>FSTM GmbH - Frank Schaefers Tischlermeister</h1>
         <h3>Möbel nach Maß, Innenausbau, Parkett &amp; mehr</h3>
         <br>
-        <a href="#about" class="btn btn-dark btn-lg">Weiter</a>
+        <a href="#Willkommen" class="btn btn-dark btn-lg">Weiter</a>
     </div>
 </header>
 
 <!-- About -->
-<section id="about" class="about">
+<section id="Willkommen" title="Willkommen" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <h2>Willkommen bei der FSTM GmbH in Moers</h2>
-                <p class="lead">Seit unserer Gründung 2011 überzeugen wir mit perfekten Möbeln nach Maß, der Ausführung
-                    sämtlicher Schreinerarbeiten und individueller Beratung.</p>
-                <p class="lead">Ob beim neuen Schlafzimmerschrank, der Dachterrasse mit Holzboden oder neuen
-                    Wohnungstüren in Ihren Immobilien - wir sind für Sie da, beraten Sie, und finden die perfekte Lösung
-                    für Ihre Wünsche.</p>
-                <p class="lead">Wir beraten Sie gerne vor Ort und sind nicht nur in Moers, sondern am Niederrhein, im
-                    Ruhrgebiet und Rheinland für Sie da - Duisburg, Oberhausen, Düsseldorf oder Köln?
+                <h2 class="text-red">Willkommen bei der FSTM GmbH - Ihrem Tischlermeister in Moers</h2>
+                <p class="lead">Seit der Gründung 2008 überzeugen wir mit hochwertigen Möbeln nach Maß, der Ausführung
+                    sämtlicher Schreinerarbeiten und einer individuellen Beratung. </p>
+                <p class="lead">Von der Reparatur bis hin zur Neugestaltung:<br>
+                    Ob beim neuen Schlafzimmerschrank, der Dachterrasse mit Holzboden oder neuen
+                    Zimmertüren in Ihrer Immobilie - wir sind für Sie da, beraten Sie, und finden die richtige Lösung
+                    für Ihre Wünsche. </p>
+                <p class="lead">Gerne beraten wir Sie vor Ort - nicht nur in Moers, sondern am Niederrhein, im
+                    Ruhrgebiet und im Rheinland.<br>
+                    Duisburg, Oberhausen, Düsseldorf oder Köln? Sprechen Sie uns an.
                 </p>
             </div>
             <div class="col-lg-12 text-center">
-                <a href="#services" class="btn btn-dark btn-lg">Weiter</a>
-                <a href="#contact" class="btn btn-dark btn-lg">Kontakt</a>
+                <a href="#Kontakt" class="btn btn-dark btn-lg">Kontakt</a>
             </div>
         </div>
-        <!-- /.row -->
     </div>
-    <!-- /.container -->
 </section>
+
+<aside class="callout">
+    <div class="text-vertical-center">
+    </div>
+</aside>
 
 <!-- Services -->
 <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-<section id="services" class="services bg-primary">
+<section id="Services" title="Unsere Services" class="services bg-primary">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 col-lg-offset-1">
@@ -121,242 +127,1017 @@
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/einbauschrank1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Möbelbau</strong>
-                            </h4>
+                            <a href="#Moebelbau">
+                                <img src="img/services/moebelbau.jpg" class="img-rounded" width="120" height="120">
+                                <h4>
+                                    <strong>Möbelbau</strong>
+                                </h4>
+                            </a>
                             <p>Einbauschränke, Regale, Betten nach Maß</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/parkett-eiche-geraeuchert.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Bodenbel&auml;ge zum Wohlf&uuml;hlen</strong>
-                            </h4>
+                            <a href="#Bodenbelaege">
+                                <img src="img/services/bodenbelaege.jpg" class="img-rounded" width="120"
+                                     height="120">
+                                <h4>
+                                    <strong>Bodenbel&auml;ge zum Wohlf&uuml;hlen</strong>
+                                </h4>
+                            </a>
                             <p>Vom modernen Laminat bis zum klassischen Echtholzparkett, von Eiche bis Zebrano und
                                 Bambus</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/kueche1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>K&uuml;chen nach Maß</strong>
-                            </h4>
+                            <a href="#Kuechen"><img src="img/services/kuechen.jpg" class="img-rounded" width="120" height="120">
+                                <h4>
+                                    <strong>K&uuml;chen nach Maß</strong>
+                                </h4></a>
                             <p>Von der Planung bis zur Endmontage</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/decke1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Innenausbau &amp; Raumkonzepte</strong>
-                            </h4>
+                            <a href="#Innenausbau"><img src="img/services/innenausbau.jpg" class="img-rounded" width="120"
+                                                        height="120">
+                                <h4>
+                                    <strong>Innenausbau &amp; Raumkonzepte</strong>
+                                </h4></a>
                             <p>Leichtbauwände, abgehängte Decken, Dachbodenausbau</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/treppe1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Treppen</strong>
-                            </h4>
-                            <p>Von gerade bis geschwungen, von klassisch bis exravagant</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
+                            <a href="#Treppen"><img src="img/services/treppen.jpg" class="img-rounded" width="120" height="120">
+                                <h4>
+                                    <strong>Treppen</strong>
+                                </h4></a>
+                            <p>Von gerade bis geschwungen, von klassisch bis extravagant</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/dachausbau1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Dachausbau</strong>
-                            </h4>
+                            <a href="#Dachausbau"> <img src="img/services/dachausbau.jpg" class="img-rounded" width="120"
+                                                        height="120">
+                                <h4>
+                                    <strong>Dachausbau</strong>
+                                </h4></a>
                             <p>Trockenbau, Einbauspots, Dachfenster</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/zimmertuer1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Türen und Fenster</strong>
-                            </h4>
+                            <a href="#TuerenUndFenster"> <img src="img/services/tuerenundfenster.jpg" class="img-rounded" width="120"
+                                                              height="120">
+                                <h4>
+                                    <strong>Türen und Fenster</strong>
+                                </h4></a>
                             <p>Haustüren, Wohnungstüren, Schiebetüren, Fenster</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
                         <div class="service-item">
-                            <img src="img/balkon1.jpg" class="img-circle" width="120" height="120">
-                            <h4>
-                                <strong>Terrassen und Balkone</strong>
-                            </h4>
+                            <a href="#TerrassenUndBalkone"> <img src="img/services/terrassenundbalkone.jpg" class="img-rounded" width="120"
+                                                                 height="120">
+                                <h4>
+                                    <strong>Terrassen und Balkone</strong>
+                                </h4></a>
                             <p>Bangkirai und andere Holzbeläge oder WPC</p>
-                            <!--<a href="#" class="btn btn-light">Learn More</a>-->
                         </div>
                     </div>
                 </div>
-                <!-- /.row (nested) -->
             </div>
-            <!-- /.col-lg-10 -->
         </div>
-        <!-- /.row -->
     </div>
-    <!-- /.container -->
 </section>
 
-<!-- Callout -->
 <aside class="callout">
     <div class="text-vertical-center">
-        <h1>Vertically Centered Text</h1>
     </div>
 </aside>
 
-<!-- Portfolio -->
-<section id="portfolio" class="portfolio">
+<section id="Moebelbau" title="Möbelbau - Unsere Services" class="portfolio">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 text-center">
-                <h2>Impressionen</h2>
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Möbelbau</h2>
                 <hr class="small">
-
-
-                <div id="carousel-portfolio" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-portfolio" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="1"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="2"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="3"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="4"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="5"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="6"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="7"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="8"></li>
-                        <li data-target="#carousel-portfolio" data-slide-to="9"></li>
-                    </ol>
-
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner">
-                        <div class="item active">
-                            <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
-                            <div class="carousel-caption">
-                                <h2>Arbeitsplatte mit Edelstahl</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
-                            <div class="carousel-caption">
-                                <h2>Badunterschrank nach Maß</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
-                            <div class="carousel-caption">
-                                <h2>Promotion Presenter</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
-                            <div class="carousel-caption">
-                                <h2>Schlafzimmerschrank nach Maß</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
-                            <div class="carousel-caption">
-                                <h2>Küche mit Arbeitsplatte aus Glas</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/einbauschreibtisch2.jpg"
-                                 alt="Schreibtisch rollbar auf Führungsschiene">
-                            <div class="carousel-caption">
-                                <h2>Schreibtisch rollbar auf Führungsschiene</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
-                            <div class="carousel-caption">
-                                <h2>Weitzer Parkett Eiche geölt</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
-                            <div class="carousel-caption">
-                                <h2>Saunabereich</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
-                            <div class="carousel-caption">
-                                <h2>Terrasse: Bangkirai mit Spots</h2>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
-                            <div class="carousel-caption">
-                                <h2>Offene Treppe: Lack und Edelstahl</h2>
-                            </div>
-                        </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
                     </div>
+                    <div id="Moebelbau-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Moebelbau-portfolio" data-slide-to="9"></li>
+                        </ol>
 
-                    <!-- Controls -->
-                    <i class="left carousel-control" href="#carousel-portfolio" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
-                    </i>
-                    <i class="right carousel-control" href="#carousel-portfolio" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
-                    </i>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Moebelbau-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Moebelbau-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 text-center">
-                <hr class="small">
-                <a href="#contact" class="btn btn-dark">Kontakt</a>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- Call to Action -->
-<!--<aside class="call-to-action bg-primary">-->
-<!--<div class="container">-->
-<!--<div class="row">-->
-<!--<div class="col-lg-12 text-center">-->
-<!--<h3>The buttons below are impossible to resist.</h3>-->
-<!--<a href="#" class="btn btn-lg btn-light">Click Me!</a>-->
-<!--<a href="#" class="btn btn-lg btn-dark">Look at Me!</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</div>-->
-<!--</aside>-->
+
+<section id="Bodenbelaege" title="Bodenbeläge - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Bodenbeläge</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="Bodenbelaege-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Bodenbelaege-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Bodenbelaege-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Bodenbelaege-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="Kuechen" title="Küchen - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Küchen</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="Kuechen-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Kuechen-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Kuechen-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Kuechen-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Kuechen-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="Innenausbau" title="Innenausbau - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Innenausbau</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="Innenausbau-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Innenausbau-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Innenausbau-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Innenausbau-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="Treppen" title="Treppen - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Treppen</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="Treppen-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Treppen-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Treppen-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Treppen-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Treppen-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="Dachausbau" title="Dachausbau - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Dachausbau</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="Dachausbau-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="1"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="2"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="3"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="4"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="5"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="6"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="7"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="8"></li>
+                            <li data-target="#Dachausbau-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#Dachausbau-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#Dachausbau-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="TuerenUndFenster" title="Türen und Fenster - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Türen und Fenster</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="TuerenUndFenster-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="1"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="2"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="3"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="4"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="5"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="6"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="7"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="8"></li>
+                            <li data-target="#TuerenUndFenster-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#TuerenUndFenster-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#TuerenUndFenster-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section id="TerrassenUndBalkone" title="Terrassen und Balkone - Unsere Services" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 text-center">
+                <h2>Terrassen und Balkone</h2>
+                <hr class="small">
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-0 col-md-12 col-md-offset-0 text-left">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
+                        sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+                        ipsum dolor sit amet.
+                    </div>
+                    <div id="TerrassenUndBalkone-portfolio" class="carousel slide col-lg-8 col-lg-offset-0 col-md-12 col-md-offset-0" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="0" class="active"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="1"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="2"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="3"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="4"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="5"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="6"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="7"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="8"></li>
+                            <li data-target="#TerrassenUndBalkone-portfolio" data-slide-to="9"></li>
+                        </ol>
+
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="item active">
+                                <img src="img/portfolio/arbeitsplatte2.jpg" alt="Arbeitsplatte mit Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Arbeitsplatte mit Edelstahl</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/badunterschrank.jpg" alt="Badunterschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Badunterschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/cncpresenter.jpg" alt="Promotion Presenter">
+                                <div class="carousel-caption">
+                                    <h2>Promotion Presenter</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschrank1.jpg" alt="Schlafzimmerschrank nach Maß">
+                                <div class="carousel-caption">
+                                    <h2>Schlafzimmerschrank nach Maß</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/kueche1.jpg" alt="Küche mit Arbeitsplatte aus Glas">
+                                <div class="carousel-caption">
+                                    <h2>Küche mit Arbeitsplatte aus Glas</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/einbauschreibtisch2.jpg"
+                                     alt="Schreibtisch rollbar auf Führungsschiene">
+                                <div class="carousel-caption">
+                                    <h2>Schreibtisch rollbar auf Führungsschiene</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/parkett-eiche-geoelt.jpg" alt="Weitzer Parkett Eiche geölt">
+                                <div class="carousel-caption">
+                                    <h2>Weitzer Parkett Eiche geölt</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/saunabereich1.jpg" alt="Saunabereich">
+                                <div class="carousel-caption">
+                                    <h2>Saunabereich</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/terrasse1.jpg" alt="Terrasse: Bangkirai mit Spots">
+                                <div class="carousel-caption">
+                                    <h2>Terrasse: Bangkirai mit Spots</h2>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img src="img/portfolio/treppe1.jpg" alt="offene Treppe: Lack und Edelstahl">
+                                <div class="carousel-caption">
+                                    <h2>Offene Treppe: Lack und Edelstahl</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Controls -->
+                        <i class="left carousel-control" href="#TerrassenUndBalkone-portfolio" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </i>
+                        <i class="right carousel-control" href="#TerrassenUndBalkone-portfolio" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<aside class="callout">
+    <div class="text-vertical-center">
+    </div>
+</aside>
 
 <!-- Map -->
-<section id="contact" class="bg-primary">
+<section id="Kontakt" title="Kontakt" class="bg-primary">
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-10 col-lg-offset-1">
                 <h2>Kontakt</h2>
                 <hr class="small">
 
-                <div class="row valign">
-                    <div id="map" class="col-lg-6 col-xs-12 map">
-                        <!--<iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0"-->
-                        <!--marginwidth="0"-->
-                        <!--src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d33429.98688080602!2d6.603365089252907!3d51.48204569527724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8bd403717a3c3%3A0x413b2de7c1c27903!2sGerhard+Schaefers!5e0!3m2!1sde!2sde!4v1466362264924"-->
-                        <!--width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+                <div class="row text-center">
+                    <div id="map" class="col-lg-6 col-md-12" style="height: 300px;">
                     </div>
-                    <div class="col-lg-6 col-xs-12 text-center" style="vertical-align: middle;">
+                    <div class="col-lg-6 col-md-12 text-center" style="vertical-align: middle;">
                         <h4><strong>FSTM GmbH</strong><br/>Frank Schaefers Tischlermeister
                         </h4>
                         <p>Trakehnenstr. 8b<br>47445 Moers</p>
@@ -377,6 +1158,11 @@
     </div>
 </section>
 
+<aside class="callout">
+    <div class="text-vertical-center">
+    </div>
+</aside>
+<!--
 <section id="partner" class="services">
     <div class="container">
         <div class="row text-center">
@@ -439,17 +1225,14 @@
                     </div>
 
                 </div>
-                <!-- /.row (nested) -->
             </div>
-            <!-- /.col-lg-10 -->
         </div>
-        <!-- /.row -->
     </div>
-    <!-- /.container -->
 </section>
+-->
 
 <!-- About -->
-<section id="impressum" class="about">
+<section id="Impressum" title="Impressum" class="about">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -539,8 +1322,8 @@
         <!-- /.row -->
         <div class="row">
             <div class="col-lg-12 text-center">
-                <a href="#top" class="btn btn-dark btn-lg">Home</a>
-                <a href="#contact" class="btn btn-dark btn-lg">Kontakt</a>
+                <a href="#Home" class="btn btn-dark btn-lg">Home</a>
+                <a href="#Kontakt" class="btn btn-dark btn-lg">Kontakt</a>
             </div>
         </div>
     </div>
@@ -563,9 +1346,10 @@
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"
         integrity="sha256-VAvG3sHdS5LqTT+5A/aeq/bZGa/Uj04xKxY8KM/w9EE=" crossorigin="anonymous"></script>
 
-
 <!-- Bootstrap Core JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/history.js/1.8/bundled-uncompressed/html4+html5/jquery.history.js"></script>
 
 <!-- Custom Theme JavaScript -->
 <script>
@@ -585,10 +1369,10 @@
     $(function () {
         $('a[href*=#]:not([href=#])').click(function () {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
+                    History.pushState(null, target[0].title + ' - FSTM GmbH', '?' + this.hash.slice(1));
                     $('html,body').animate({
                         scrollTop: target.offset().top
                     }, 1000);
@@ -597,9 +1381,23 @@
             }
         });
     });
+    $(document).ready(function () {
+        var split = location.href.split("?")[1];
+        if (split) {
+            var ref = $('#'+split);
+            if (ref.length) {
+                History.replaceState(null, ref[0].title+" - FSTM GmbH", location.href);
+                setTimeout(function(){
+                    $(window).scrollTop(ref.offset().top);
+                }, 100);
+            } else {
+                console.debug("ignoring " + split)
+            }
+        }
+    });
 </script>
 
-<script>$('.carousel').carousel()</script>
+<script type="text/javascript">$('.carousel').carousel()</script>
 <script type="text/javascript">
 
     var map;
@@ -611,6 +1409,7 @@
             zoom: 12,
             draggable: false,
             mapTypeId: google.maps.MapTypeId.ROADMAP
+            
         });
 
         contentString = '<div class="mapmarker">' +
@@ -638,10 +1437,19 @@
     }
 
 </script>
+
+<script type="text/javascript">
+
+
+</script>
+
+
 <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvIFJrhaZxKc_axms6L8bzD-_1eaLs01c&callback=initMap">
 </script>
 <script async defer type="application/ld+json" src="richsnippets.js">
+
+
 
 </body>
 
